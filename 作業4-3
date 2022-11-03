@@ -1,0 +1,23 @@
+import java.lang.*;
+
+
+public class s4010 {
+
+	public static void main(String[] args) {
+		int lottos [] = new int[3];
+		
+		generate_lottos(lottos);
+		for(int i=1;i<3;i++) {
+		
+		}
+	}
+
+	private static void generate_lottos(int[] arr) {
+		// TODO Auto-generated method stub
+		for(int i =0;i<arr.length;i++) {
+			arr[i]=(int)((Math.random()*3)+1);
+			System.out.println(arr[i]);	
+			}
+	}
+
+}
