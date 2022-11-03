@@ -1,0 +1,28 @@
+# myjavahomework
+程式碼作業收集區
+
+package ch5;
+import java.util.Scanner;
+
+public class ex5 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("來一局勝負吧!");
+		System.out.println("-----------------------------------");
+		Scanner input = new Scanner(System.in);//讓玩家輸入的東東
+		
+		int computer;//電腦onop
+		boolean flag = true;
+		String yn = "Y";
+	
+		computer = (int) (Math.random() * 3) + 1; // 另一種產生隨機數的方法如下被註釋的內容
+			// Random r=new Random();
+			// int computer = r.nextInt(3)+1;
+			System.out.println("結果爲：" + computer);//檢視用ouobbbb
+			if (computer == 1){System.out.println("結果爲：" + "剪刀");}
+			if (computer == 2) {System.out.print("結果爲：" + "石頭");}// String strComputer = "石頭";
+			if (computer == 3) {System.out.print("結果爲：" + "布");}// String strComputer = "布"; 
+			
+	}
+
+}
